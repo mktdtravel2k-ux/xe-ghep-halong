@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaLong Connect - Xe Ghép Hà Nội <=> Hạ Long | Đón Trả Tận Nơi Giá Rẻ</title>
+    <meta name="description" content="Dịch vụ xe ghép, xe tiện chuyến Hà Nội - Hạ Long chỉ từ 450k/ghế. Đón trả tận nơi, bao xe 5 chỗ 1100k, bao xe 7 chỗ 1200k. Uy tín, chuyên nghiệp, phục vụ 24/7.">
+    <meta name="keywords" content="xe ghep ha noi ha long, xe ghep ha long, xe tien chuyen ha noi ha long, halong connect, dat xe di ha long">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HaLong Connect - Xe Ghép Hà Nội <=> Hạ Long Giá Tốt Nhất">
+    <meta property="og:description" content="Đi ghép chỉ 450K, bao xe chỉ từ 1100K. Đưa đón tận nhà, xe đời mới sạch sẽ, lái xe an toàn đúng giờ.">
+    <meta property="og:image" content="assets/halong_connect_hero.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="HaLong Connect Logo" class="brand-logo-img">
+            </a>
+            
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Trang Chủ</a>
+                <a href="#services" class="nav-link">Bảng Giá</a>
+                <a href="#why-us" class="nav-link">Ưu Điểm</a>
+                <a href="#steps" class="nav-link">Quy Trình</a>
+                <a href="#driver-partner" class="nav-link">Tuyển Tài Xế</a>
+            </nav>
+
+            <div class="header-action">
+                <a href="tel:0355146637" class="btn btn-call animate-pulse">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>035.514.6637</span>
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Menu Overlay -->
+    <div class="mobile-nav-menu">
+        <button class="mobile-nav-close"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#home" class="mobile-link">Trang Chủ</a>
+        <a href="#services" class="mobile-link">Bảng Giá</a>
+        <a href="#why-us" class="mobile-link">Ưu Điểm</a>
+        <a href="#steps" class="mobile-link">Quy Trình</a>
+        <a href="#driver-partner" class="mobile-link">Tuyển Tài Xế</a>
+        <a href="tel:0355146637" class="mobile-call-btn">
+            <i class="fa-solid fa-phone"></i> Gọi Ngay: 035.514.6637
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Dịch Vụ Xe Ghép Tiện Chuyến Uy Tín</div>
+                <h1 class="hero-title">
+                    HẠ LONG GỌI <br>
+                    <span class="highlight">TEAM HÀ NỘI</span> TRẢ LỜI !
+                </h1>
+                <p class="hero-subtitle">
+                    Hành trình an toàn, trọn vẹn niềm vui cùng dòng xe đời mới chất lượng cao. Đưa đón tận nhà, cam kết không bắt khách dọc đường, đúng giờ 100%.
+                </p>
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Đón trả tận nhà</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Lái xe chuyên nghiệp</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Phục vụ 24/7</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-booking-wrapper">
+                <div class="booking-card">
+                    <div class="booking-card-header">
+                        <h3><i class="fa-solid fa-car-side"></i> Đặt Chuyến Xe Nhanh</h3>
+                        <p>Vui lòng điền thông tin để nhận báo giá ưu đãi</p>
+                    </div>
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group route-inputs">
+                            <div class="input-wrapper">
+                                <label for="pickup"><i class="fa-solid fa-location-dot"></i> Điểm Đi</label>
+                                <select id="pickup" required>
+                                    <option value="Hà Nội" selected>Hà Nội</option>
+                                    <option value="Hạ Long">Hạ Long</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn-swap-route" id="swap-route" title="Đổi chiều đi/đến">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            </button>
+                            <div class="input-wrapper">
+                                <label for="dropoff"><i class="fa-solid fa-location-arrow"></i> Điểm Đến</label>
+                                <select id="dropoff" required>
+                                    <option value="Hạ Long" selected>Hạ Long</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group width-50">
+                                <label for="service-type"><i class="fa-solid fa-layer-group"></i> Hình Thức</label>
+                                <select id="service-type" required>
+                                    <option value="ghep" selected>Xe Ghép (450K/ghế)</option>
+                                    <option value="bao-5">Bao xe 5 chỗ (1.100K)</option>
+                                    <option value="bao-7">Bao xe 7 chỗ (1.200K)</option>
+                                </select>
+                            </div>
+                            <div class="form-group width-50">
+                                <label for="seats-count" id="seats-label"><i class="fa-solid fa-user-group"></i> Số Ghế</label>
+                                <select id="seats-count">
+                                    <option value="1" selected>1 Ghế</option>
+                                    <option value="2">2 Ghế</option>
+                                    <option value="3">3 Ghế</option>
+                                    <option value="4">4 Ghế</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group width-50">
+                                <label for="travel-date"><i class="fa-solid fa-calendar-days"></i> Ngày Đi</label>
+                                <input type="date" id="travel-date" required>
+                            </div>
+                            <div class="form-group width-50">
+                                <label for="travel-time"><i class="fa-solid fa-clock"></i> Giờ Đi</label>
+                                <input type="time" id="travel-time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passenger-name"><i class="fa-solid fa-user"></i> Họ & Tên</label>
+                            <input type="text" id="passenger-name" placeholder="Nhập tên của bạn" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passenger-phone"><i class="fa-solid fa-phone"></i> Số Điện Thoại</label>
+                            <input type="tel" id="passenger-phone" placeholder="Nhập số điện thoại liên hệ" required>
+                        </div>
+
+                        <div class="price-estimation" id="price-box">
+                            <span>Giá dự kiến: </span>
+                            <strong class="estimated-price" id="estimated-price">450.000đ</strong>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit-booking">
+                            <i class="fa-solid fa-paper-plane"></i> ĐẶT XE NGAY
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">BẢNG GIÁ DỊCH VỤ</span>
+                <h2>Chi Phí Minh Bạch - Không Phát Sinh</h2>
+                <p>Chúng tôi cung cấp các gói dịch vụ đa dạng phù hợp với mọi nhu cầu di chuyển của quý khách giữa Hà Nội và Hạ Long.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Card 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-card-badge">Phổ biến nhất</div>
+                    <div class="pricing-icon">
+                        <i class="fa-solid fa-chair"></i>
+                    </div>
+                    <h3>Vé Xe Ghép</h3>
+                    <div class="price-amount">
+                        <span class="amount">450.000đ</span>
+                        <span class="unit">/ ghế / lượt</span>
+                    </div>
+                    <p class="pricing-desc">Phù hợp cho khách đi lẻ, đi công tác hoặc du lịch tiết kiệm.</p>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Đưa đón tận nơi nội thành</li>
+                        <li><i class="fa-solid fa-check"></i> Xe sedan đời mới siêu êm</li>
+                        <li><i class="fa-solid fa-check"></i> Nước uống & Khăn lạnh</li>
+                        <li><i class="fa-solid fa-check"></i> Bảo hiểm hành khách đầy đủ</li>
+                    </ul>
+                    <a href="#home" class="btn btn-secondary btn-pricing-select" data-type="ghep">Đặt Xe Ghép</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="pricing-card featured">
+                    <div class="pricing-card-badge">Khuyên Dùng</div>
+                    <div class="pricing-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <h3>Bao Xe 5 Chỗ</h3>
+                    <div class="price-amount">
+                        <span class="amount">1.100.000đ</span>
+                        <span class="unit">/ lượt xe riêng</span>
+                    </div>
+                    <p class="pricing-desc">Thoải mái, riêng tư cho gia đình nhỏ hoặc nhóm bạn 2-4 người.</p>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Xe riêng hoàn toàn 100%</li>
+                        <li><i class="fa-solid fa-check"></i> Đưa đón tận nhà, linh hoạt giờ giấc</li>
+                        <li><i class="fa-solid fa-check"></i> Không giới hạn điểm dừng nghỉ dọc đường</li>
+                        <li><i class="fa-solid fa-check"></i> Miễn phí cầu đường cao tốc</li>
+                    </ul>
+                    <a href="#home" class="btn btn-primary btn-pricing-select" data-type="bao-5">Bao Xe 5 Chỗ</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-icon">
+                        <i class="fa-solid fa-van-shuttle"></i>
+                    </div>
+                    <h3>Bao Xe 7 Chỗ</h3>
+                    <div class="price-amount">
+                        <span class="amount">1.200.000đ</span>
+                        <span class="unit">/ lượt xe riêng</span>
+                    </div>
+                    <p class="pricing-desc">Không gian rộng rãi cho đoàn đông người, nhiều hành lý ký gửi.</p>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Xe SUV 7 chỗ đời mới (Innova, Fortuner, VF8, VF9...)</li>
+                        <li><i class="fa-solid fa-check"></i> Đón trả nhiều điểm nội thành</li>
+                        <li><i class="fa-solid fa-check"></i> Cốp chứa đồ siêu rộng</li>
+                        <li><i class="fa-solid fa-check"></i> Hỗ trợ xuất hóa đơn VAT nếu cần</li>
+                    </ul>
+                    <a href="#home" class="btn btn-secondary btn-pricing-select" data-type="bao-7">Bao Xe 7 Chỗ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">TẠI SAO CHỌN CHÚNG TÔI</span>
+                <h2>Trải Nghiệm Hành Trình 5 Sao</h2>
+                <p>HaLong Connect không chỉ là chuyến xe, đó là sự cam kết về chất lượng dịch vụ tốt nhất trên tuyến Hà Nội - Hạ Long.</p>
+            </div>
+            
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="why-icon-box bg-red">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <h4>Tiết Kiệm Chi Phí</h4>
+                    <p>Chia sẻ hành trình để giảm tới 50% chi phí so với taxi truyền thống, nhưng vẫn giữ nguyên sự thoải mái và dịch vụ chu đáo.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon-box bg-blue">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h4>Đưa Đón Tận Nhà</h4>
+                    <p>Không cần ra bến xe đông đúc, tài xế của chúng tôi sẽ đến đón tận cửa nhà bạn và đưa bạn đến đúng điểm đích an toàn.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon-box bg-green">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h4>An Toàn Tuyệt Đối</h4>
+                    <p>Đội ngũ tài xế được tuyển chọn kỹ lưỡng, tối thiểu 5 năm kinh nghiệm, luôn lái xe điềm đạm, an toàn và lịch sự.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon-box bg-gold">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h4>Đúng Giờ Cam Kết</h4>
+                    <p>Xe khởi hành đúng giờ lịch trình. Không delay, không chạy vòng quanh đón khách làm ảnh hưởng đến thời gian của bạn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="steps" class="steps section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">HƯỚNG DẪN ĐẶT XE</span>
+                <h2>Đặt Xe Trong 3 Bước Đơn Giản</h2>
+                <p>Chỉ với vài thao tác cơ bản, hành trình đi lại của bạn sẽ được sắp xếp chu đáo và chuyên nghiệp.</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <h4>Đăng Ký Thông Tin</h4>
+                    <p>Điền điểm đi, điểm đến, thời gian mong muốn vào form đặt xe hoặc gọi trực tiếp Hotline.</p>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <h4>Xác Nhận Chuyến Xe</h4>
+                    <p>Nhân viên tổng đài sẽ gọi lại trong 5 phút để xác nhận lịch trình, dòng xe và báo giá cuối cùng.</p>
+                </div>
+                
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-suitcase-rolling"></i>
+                    </div>
+                    <h4>Đón Đưa & Khởi Hành</h4>
+                    <p>Tài xế liên hệ trước 30 phút khi đón. Xe đến tận nhà đưa bạn đi nghỉ dưỡng hoặc làm việc thoải mái.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driver Partner Section -->
+    <section id="driver-partner" class="driver-partner section-padding">
+        <div class="container partner-container">
+            <div class="partner-image-wrapper">
+                <div class="partner-image-bg"></div>
+                <img src="assets/halong_connect_hero.png" alt="Đối tác tài xế HaLong Connect" class="partner-img">
+            </div>
+            <div class="partner-content">
+                <span class="sub-title">HỢP TÁC CÙNG HALONG CONNECT</span>
+                <h2>Tuyển Dụng Tài Xế - Đối Tác Lái Xe</h2>
+                <p>Bạn đang sở hữu xe 5 chỗ, 7 chỗ chạy tuyến Hà Nội - Quảng Ninh và muốn tăng thêm nguồn thu nhập ổn định hàng tháng?</p>
+                <ul class="partner-benefits">
+                    <li><i class="fa-solid fa-shield-halved"></i> <strong>Thu nhập hấp dẫn:</strong> Phân chia tỷ lệ cao, ổn định chuyến chạy mỗi ngày.</li>
+                    <li><i class="fa-solid fa-clock"></i> <strong>Linh hoạt thời gian:</strong> Tự đăng ký lịch chạy rảnh lúc nào chạy lúc đó.</li>
+                    <li><i class="fa-solid fa-users"></i> <strong>Hỗ trợ 24/7:</strong> Đội ngũ điều hành hỗ trợ tìm khách ghép liên tục.</li>
+                </ul>
+                <div class="partner-actions">
+                    <a href="https://zalo.me/0355146637" target="_blank" class="btn btn-primary">
+                        <i class="fa-solid fa-user-plus"></i> Đăng Ký Tài Xế
+                    </a>
+                    <a href="tel:0355146637" class="btn btn-outline">
+                        <i class="fa-solid fa-headset"></i> Gọi Tổng Đài
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">ĐÁNH GIÁ KHÁCH HÀNG</span>
+                <h2>Hành Khách Nói Gì Về Chúng Tôi</h2>
+                <p>Hàng ngàn hành khách đã sử dụng dịch vụ và gửi lại những phản hồi tích cực. Sự hài lòng của bạn là động lực phát triển.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comment">"Tôi thường xuyên đi công tác Hà Nội - Hạ Long. Từ ngày biết HaLong Connect tôi tiết kiệm được rất nhiều tiền đi lại mà xe đi êm, tài xế đúng giờ và đón trả tận nơi vô cùng tiện."</p>
+                    <div class="client-info">
+                        <div class="client-avatar bg-red-light">A</div>
+                        <div>
+                            <h5>Anh Tuấn Anh</h5>
+                            <span>Kỹ sư xây dựng</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comment">"Cuối tuần rồi gia đình mình bao xe 7 chỗ đi Hạ Long du lịch. Xe VinFast VF9 siêu to rộng, sạch tinh tươm. Tài xế nói chuyện lịch sự, chạy điềm đạm nên nhà mình ai cũng hài lòng."</p>
+                    <div class="client-info">
+                        <div class="client-avatar bg-blue-light">H</div>
+                        <div>
+                            <h5>Chị Thu Hương</h5>
+                            <span>Kinh doanh tự do</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="comment">"Dịch vụ tuyệt vời! Xe đón đúng giờ hẹn, đi thẳng cao tốc 5B rất nhanh. Giá vé ghép 450K rất hợp lý so với chất lượng dịch vụ đón tận nhà này."</p>
+                    <div class="client-info">
+                        <div class="client-avatar bg-green-light">M</div>
+                        <div>
+                            <h5>Anh Minh Quang</h5>
+                            <span>Nhân viên văn phòng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/logo.png" alt="HaLong Connect Logo" class="brand-logo-img">
+                </a>
+                <p class="footer-desc">Đơn vị cung cấp dịch vụ xe ghép, xe tiện chuyến Hà Nội - Quảng Ninh chất lượng cao, uy tín và chuyên nghiệp.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liên Kết Nhanh</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#services">Bảng Giá</a></li>
+                    <li><a href="#why-us">Ưu Điểm</a></li>
+                    <li><a href="#steps">Quy Trình</a></li>
+                    <li><a href="#driver-partner">Đối Tác Tài Xe</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Dịch Vụ</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Xe Ghép Hà Nội - Hạ Long</a></li>
+                    <li><a href="#home">Xe Tiện Chuyến Hạ Long - Hà Nội</a></li>
+                    <li><a href="#home">Bao xe riêng 5 chỗ</a></li>
+                    <li><a href="#home">Bao xe riêng 7 chỗ</a></li>
+                    <li><a href="#home">Vận chuyển ký gửi hàng hóa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Thông Tin Liên Hệ</h4>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span>Hotline 24/7:</span>
+                            <strong><a href="tel:0355146637">035.514.6637</a></strong>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span>Email:</span>
+                            <a href="mailto:info@halongconnect.vn">info@halongconnect.vn</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span>Văn phòng Hà Nội:</span>
+                            <span>Khuất Duy Tiến, Thanh Xuân, Hà Nội</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span>Văn phòng Hạ Long:</span>
+                            <span>Bãi Cháy, TP. Hạ Long, Quảng Ninh</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 HaLong Connect. Thiết kế và phát triển bởi Antigravity.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-widgets">
+        <a href="https://zalo.me/0355146637" target="_blank" class="widget-zalo" title="Chat Zalo ngay">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo Icon">
+        </a>
+        <a href="tel:0355146637" class="widget-call" title="Gọi Hotline đặt xe">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Booking Confirmation Modal -->
+    <div class="modal-overlay" id="confirm-modal">
+        <div class="modal-card">
+            <div class="modal-close-btn" id="modal-close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="modal-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h2>ĐẶT XE THÀNH CÔNG!</h2>
+            <p>Cảm ơn bạn đã lựa chọn HaLong Connect. Yêu cầu đặt xe của bạn đã được tiếp nhận thành công.</p>
+            
+            <div class="modal-details">
+                <h4>Chi tiết hành trình:</h4>
+                <ul>
+                    <li><span>Lịch trình:</span> <strong id="modal-detail-route">Hà Nội <=> Hạ Long</strong></li>
+                    <li><span>Loại xe:</span> <strong id="modal-detail-type">Xe Ghép</strong></li>
+                    <li><span>Thời gian:</span> <strong id="modal-detail-time">22/06/2026 - 08:00</strong></li>
+                    <li><span>Hành khách:</span> <strong id="modal-detail-name">Nguyễn Văn A</strong></li>
+                    <li><span>Hotline hỗ trợ:</span> <strong class="text-red">035.514.6637</strong></li>
+                </ul>
+            </div>
+
+            <div class="modal-price">
+                <span>Tổng chi phí dự kiến:</span>
+                <strong id="modal-detail-price">450.000đ</strong>
+            </div>
+
+            <p class="modal-note"><i class="fa-solid fa-circle-info"></i> Nhân viên tổng đài sẽ gọi điện thoại hoặc gửi tin nhắn Zalo xác nhận chuyến đi trong vòng 5 phút.</p>
+            
+            <button class="btn btn-primary btn-modal-close" id="btn-modal-done">Xác Nhận & Đóng</button>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
